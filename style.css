@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: #f3f3f3;
   color: #333;
-  width: fit-content;
+  width: -webkit-fill-available;
 }
 
 header {
@@ -32,8 +32,9 @@ header {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-around;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .projects {
     display: flex;
     overflow-x: auto;
