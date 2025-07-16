@@ -46,6 +46,16 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 600px) {
+  .profile-section {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+}
+
 .profile-pic img {
     width: 200px;
     height: 200px;
