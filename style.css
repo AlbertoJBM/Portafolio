@@ -1,3 +1,10 @@
+:root {
+    --purple: #6a0dad;  /* Morado principal */
+    --light-purple: #9b59b6; /* Morado claro */
+    --dark-purple: #4b0082; /* Morado oscuro */
+    --white: #ffffff;
+    --gray: #f5f5f5;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -8,8 +15,8 @@ body {
 }
 
 header {
-  background-color: #673ab7;
-  color: white;
+  background: linear-gradient(135deg, var(--purple), var(--light-purple));
+  color: var(--white);
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -20,8 +27,8 @@ header {
 }
 
 .perfil {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -54,7 +61,7 @@ header {
 .project a {
   display: inline-block;
   margin-top: 0.5rem;
-  background-color: #673ab7;
+  background-color: var(--purple);
   color: white;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -67,12 +74,19 @@ header {
 }
 
 .contact button {
-  background-color: #673ab7;
+  background-color: var(--purple);
   color: white;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
+img{
+  width: 200px;
+  height: 200px;
+}
+img:hover {
+    box-shadow: 0 2px 8px var(--light-purple); /* Ajusta los valores según prefieras */
+    transition: box-shadow 0.3s ease; /* Efecto suave */
+}
 
